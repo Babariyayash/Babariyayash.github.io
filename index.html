@@ -12,6 +12,8 @@
   <!-- 
     - custom css link
   -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="perfect.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
@@ -137,17 +139,68 @@
         <!-- 
         - #FEATURED CAR
       -->
+      
       <section class="section featured-car" id="featured-car">
         <div class="container">
             <div class="title-wrapper">
                 <h2 class="h2 section-title">Featured cars</h2>
             </div>
             <ul class="featured-car-list"></ul>
-            
-
         </div>
+
+        <!-- <div class="banner-wrapper">
+            <ul class="featured-car-list1">
+              <li>Sedan</li>
+              <li>-</li>>
+              <li>Minivan</li>
+              <li>-</li>>
+              <li>Exotic Cars</li>
+              <li>-</li>>
+              <li>SUV</li>
+              <li>-</li>>
+              <li>Convertible</li>
+            </ul>
+        </div>
+        -->
+
       </section>
 
+      <section class="section banner-section">
+        <div class="container1">
+            <h2 class="section-heading">Our Features</h2>
+            <p class="section-description">Discover a world of convenience, safety, and customization, paving the way for unforgettable adventures and seamless mobility solutions..</p>
+          <div class="center-wrapper">
+            <div class="left-info">
+                <!-- <i class="fas fa-car logo-icon"></i> -->
+              <div class="info top">
+                <h3>First Class Service</h3>
+                <p>Where luxury meets exceptional care, creating unforgettable moments and exceeding your every expectation.</p>
+              </div>
+              
+              <div class="info bottom">
+                <h3>24/7 road assistance</h3>
+                <p>Reliable support when you need it most, keeping you on the move with confidence and peace of mind.</p>
+              </div>
+            </div>
+            <div class="car-photo">
+              <!-- Place your car photo here -->
+              <img src="assets/images/Rvr.png" alt="Car Photo">
+            </div>
+            <div class="right-info">
+              <div class="info top">
+                <h3>Quality at Minimum Expense</h3>
+                <p>Unlocking affordable brilliance with elevating quality while minimizing costs for maximum value.
+                </p>
+              </div>
+              <div class="info bottom">
+                <h3>Free Pick-Up & Drop-Of</h3>
+                <p>Enjoy free pickup and drop-off services, adding an extra layer of ease to your car rental experience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       <!-- 
         - #GET START
       -->
@@ -159,32 +212,35 @@
 
           <ul class="get-start-list">
 
-            <li>
+            <!-- <li>
               <div class="get-start-card">
 
                 <div class="card-icon icon-1">
                   <ion-icon name="person-add-outline"></ion-icon>
                 </div>
 
-                <h3 class="card-title">Create a profile</h3>
+                <h3 class="card-title">Click Rent Now</h3>
 
                 <p class="card-text">
                   bkjbkjbjkjkbjk
                 </p>
 
-                <a href="#" class="card-link">Get started</a>
+                <a href="#featured-car" class="card-link">Get started</a>
 
               </div>
-            </li>
+            </li> -->
 
             <li>
               <div class="get-start-card">
 
-                <div class="card-icon icon-2">
+                <!-- <div class="card-icon icon-2">
                   <ion-icon name="car-outline"></ion-icon>
+                </div> -->
+                <div class="card-icon icon-1">
+                    <ion-icon name="person-add-outline"></ion-icon>
                 </div>
 
-                <h3 class="card-title">Tell us what car you want</h3>
+                <h3 class="card-title">Create an account</h3>
 
                 <p class="card-text">
                  jhbjhbjhb hj hj
@@ -196,11 +252,14 @@
             <li>
               <div class="get-start-card">
 
-                <div class="card-icon icon-3">
+                <!-- <div class="card-icon icon-3">
                   <ion-icon name="person-outline"></ion-icon>
+                </div> -->
+                <div class="card-icon icon-2">
+                    <ion-icon name="car-outline"></ion-icon>
                 </div>
 
-                <h3 class="card-title">Match with seller</h3>
+                <h3 class="card-title">Seelct trip dates and time</h3>
 
                 <p class="card-text">
                   bkjbjk bhjk
@@ -216,7 +275,7 @@
                   <ion-icon name="card-outline"></ion-icon>
                 </div>
 
-                <h3 class="card-title">Make a deal</h3>
+                <h3 class="card-title">Payment</h3>
 
                 <p class="card-text">
                    kj jm jk 
@@ -309,29 +368,33 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-          apiKey: "AIzaSyA0qoK8Ja_cokYyc0-X8g7LQ2y2iBJOklU",
-          authDomain: "perfect-rental.firebaseapp.com",
-          projectId: "perfect-rental",
-          storageBucket: "perfect-rental.appspot.com",
-          messagingSenderId: "618245943372",
-          appId: "1:618245943372:web:408e56127009a8391cc4e9",
-          measurementId: "G-TTC9R3SKJV"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-      </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+      const container = document.querySelector(".container");
+      const bannerSection = document.querySelector(".banner-section");
+      const windowHeight = window.innerHeight;
+
+      function animateContainer() {
+        const scrollTop = window.pageYOffset;
+        const bannerSectionTop = bannerSection.offsetTop;
+
+        if (
+          scrollTop > bannerSectionTop - windowHeight + 100 &&
+          scrollTop < bannerSectionTop + bannerSection.offsetHeight
+        ) {
+          container.style.opacity = "1";
+          container.style.transform = "translateY(0)";
+        } else {
+          container.style.opacity = "0";
+          container.style.transform = "translateY(20px)";
+        }
+      }
+
+      window.addEventListener("scroll", animateContainer);
+      animateContainer();
+    });
+    </script>
+    
     
         
 </body>
