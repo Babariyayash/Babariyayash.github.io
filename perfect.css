@@ -187,7 +187,8 @@
     padding: 5px;
     display: grid;
     place-items: center;
-    border-radius: var(--radius-14);
+    /* border-radius: var(--radius-14); */
+    border-radius: 20px;
     font-family: var(--ff-nunito);
     font-size: var(--fs-6);
     font-weight: var(--fw-600);
@@ -918,7 +919,31 @@
   .has-scrollbar::-webkit-scrollbar-button { width: calc(25% - 40px); }
   
   
+  /*-----------------------------------*\
+    #ABOUT US
+  \*-----------------------------------*/
   
+  .about-us .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-color: white;
+    border-radius: 20px;
+  }
+  
+  .about-us .description-wrapper {
+    margin-top: 15px;
+    text-align: left;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 20px;
+  }
   
   
   /*-----------------------------------*\
@@ -1014,6 +1039,10 @@
     .container1{
       max-width: 450px;
     }
+
+    .about-us .container {
+      max-width: 420px;
+    }
    }
   
   @media (min-width: 350px) {
@@ -1024,6 +1053,13 @@
 
      .container1{
       max-width: 420px;
+    }
+    .about-us .container {
+      max-width: 420px;
+    }
+    .about-us .description-wrapper {
+      margin-left: 10px;
+      margin-right: 10px;
     }
   
     .featured-car-card .card-list { grid-template-columns: 1fr 1fr; }
@@ -1060,7 +1096,10 @@
     .container1{
       max-width: 510px;
     }
-  
+
+    .about-us .container {
+      max-width: 510px;
+    }
   
   
     /**
@@ -1115,6 +1154,10 @@
     .container { max-width: 720px; }
 
     .container1{
+      max-width: 700px;
+    }
+
+    .about-us .container {
       max-width: 700px;
     }
   
@@ -1291,6 +1334,10 @@
      */
   
     .container { max-width: 960px; }
+
+    /* .about-us .container {
+      max-width: 900px;
+    } */
   
   
   
@@ -1359,6 +1406,14 @@
     .container1{
       max-width: 1350px;
     }
+
+    .container1{
+      max-width: 1350px;
+    }
+
+    .about-us .container {
+      max-width: 1350px;
+    }
   
   
   
@@ -1376,6 +1431,7 @@
     .navbar-link {
       margin-bottom: 0;
       font-weight: var(--fw-600);
+      /* border-radius: 20px; */
     }
   
     .navbar-list {
