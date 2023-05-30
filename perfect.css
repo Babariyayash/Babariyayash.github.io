@@ -1023,7 +1023,7 @@
      */
 
      .container1{
-      max-width: 450px;
+      max-width: 420px;
     }
   
     .featured-car-card .card-list { grid-template-columns: 1fr 1fr; }
