@@ -1009,6 +1009,12 @@
   /**
    * responsive for large than 350px screen
    */
+
+   @media (min-width: 250px) {
+    .container1{
+      max-width: 450px;
+    }
+   }
   
   @media (min-width: 350px) {
   
