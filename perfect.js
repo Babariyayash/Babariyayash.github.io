@@ -17,30 +17,6 @@ function createCarCards(containerId) {
         link: 'https://turo.com/ca/en/minivan-rental/canada/edmonton-ab/kia/carnival/1873829?endDate=06%2F02%2F2023&endTime=10%3A00&startDate=05%2F30%2F2023&startTime=10%3A00'
       },
       {
-        image: './assets/images/beetle.jpeg',
-        alt: 'Volkswagen Beetle 2014',
-        title: 'Volkswagen Beetle',
-        year: 2014,
-        capacity: '4 People',
-        type: 'Gasoline',
-        fuel: '6.6 L / 100km',
-        transmission: 'Automatic',
-        price: '$440',
-        link : 'https://turo.com/ca/en/car-rental/canada/edmonton-ab/volkswagen/beetle/2001413?endDate=06%2F02%2F2023&endTime=10%3A00&startDate=05%2F30%2F2023&startTime=10%3A00'
-        },
-      {
-        image: './assets/images/rio.JPG',
-        alt: 'Kia Rio 2014',
-        title: 'Kia Rio ',
-        year: 2014,
-        capacity: '5 People',
-        type: 'Gasoline',
-        fuel: '6.0 L / 100km',
-        transmission: 'Automatic',
-        price: '$350',
-        link : 'https://turo.com/ca/en/car-rental/canada/edmonton-ab/kia/rio/1898970?endDate=06%2F02%2F2023&endTime=10%3A00&startDate=05%2F30%2F2023&startTime=10%3A00'
-      },
-      {
         image: './assets/images/tesla.JPG',
         alt: 'Tesla Model 3 2022',
         title: 'Tesla Model 3',
@@ -51,19 +27,6 @@ function createCarCards(containerId) {
         transmission: 'Automatic',
         price: '$350',
         link: 'https://turo.com/ca/en/car-rental/canada/edmonton-ab/tesla/model-3/1964887?endDate=06%2F02%2F2023&endTime=10%3A00&startDate=05%2F30%2F2023&startTime=10%3A00'
-      },
-      
-      {
-        image: './assets/images/caravan.JPG',
-        alt: 'Dodge Grand Caravan 2017',
-        title: 'Dodge Grand Caravan',
-        year: 2017,
-        capacity: '7 People',
-        type: 'Gasoline',
-        fuel: '9.4 L / 100km',
-        transmission: 'Automatic',
-        price: '$350',
-        link: 'https://turo.com/ca/en/minivan-rental/canada/edmonton-ab/dodge/grand-caravan/1996958?endDate=06%2F02%2F2023&endTime=10%3A00&startDate=05%2F30%2F2023&startTime=10%3A00'
       },
       {
         image: './assets/images/rvr.jpeg',
@@ -89,6 +52,43 @@ function createCarCards(containerId) {
         price: '$350',
         link: 'https://turo.com/ca/en/car-rental/canada/edmonton-ab/toyota/corolla/2007407?endDate=06%2F02%2F2023&endTime=10%3A00&startDate=05%2F30%2F2023&startTime=10%3A00'
       },
+      {
+        image: './assets/images/caravan.JPG',
+        alt: 'Dodge Grand Caravan 2017',
+        title: 'Dodge Grand Caravan',
+        year: 2017,
+        capacity: '7 People',
+        type: 'Gasoline',
+        fuel: '9.4 L / 100km',
+        transmission: 'Automatic',
+        price: '$350',
+        link: 'https://turo.com/ca/en/minivan-rental/canada/edmonton-ab/dodge/grand-caravan/1996958?endDate=06%2F02%2F2023&endTime=10%3A00&startDate=05%2F30%2F2023&startTime=10%3A00'
+      },
+      {
+        image: './assets/images/rio.JPG',
+        alt: 'Kia Rio 2014',
+        title: 'Kia Rio ',
+        year: 2014,
+        capacity: '5 People',
+        type: 'Gasoline',
+        fuel: '6.0 L / 100km',
+        transmission: 'Automatic',
+        price: '$350',
+        link : 'https://turo.com/ca/en/car-rental/canada/edmonton-ab/kia/rio/1898970?endDate=06%2F02%2F2023&endTime=10%3A00&startDate=05%2F30%2F2023&startTime=10%3A00'
+      },  
+      {
+        image: './assets/images/beetle.jpeg',
+        alt: 'Volkswagen Beetle 2014',
+        title: 'Volkswagen Beetle',
+        year: 2014,
+        capacity: '4 People',
+        type: 'Gasoline',
+        fuel: '6.6 L / 100km',
+        transmission: 'Automatic',
+        price: '$440',
+        link : 'https://turo.com/ca/en/car-rental/canada/edmonton-ab/volkswagen/beetle/2001413?endDate=06%2F02%2F2023&endTime=10%3A00&startDate=05%2F30%2F2023&startTime=10%3A00'
+        },
+      
 
       // Add more car objects here if needed
     ];
@@ -164,9 +164,9 @@ function createCarCards(containerId) {
     const cardPriceWrapper = document.createElement('div');
     cardPriceWrapper.className = 'card-price-wrapper';
 
-    const cardPrice = document.createElement('p');
-    cardPrice.className = 'card-price';
-    cardPrice.innerHTML = `<strong>${car.price}</strong> / month`;
+    // const cardPrice = document.createElement('p');
+    // cardPrice.className = 'card-price';
+    // cardPrice.innerHTML = `<strong>${car.price}</strong> / month`;
 
     // const favButton = document.createElement('button');
     // favButton.className = 'btn fav-btn';
@@ -184,7 +184,7 @@ function createCarCards(containerId) {
         window.location.href = car.link; // Navigate to the specific link for each car
       });
 
-    cardPriceWrapper.appendChild(cardPrice);
+    // cardPriceWrapper.appendChild(cardPrice);
     // cardPriceWrapper.appendChild(favButton);
     cardPriceWrapper.appendChild(rentButton);
 
