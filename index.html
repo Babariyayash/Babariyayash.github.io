@@ -12,7 +12,7 @@
   <!-- 
     - custom css link
   -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="perfect.css">
   <style>
@@ -368,32 +368,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-      const container = document.querySelector(".container");
-      const bannerSection = document.querySelector(".banner-section");
-      const windowHeight = window.innerHeight;
-
-      function animateContainer() {
-        const scrollTop = window.pageYOffset;
-        const bannerSectionTop = bannerSection.offsetTop;
-
-        if (
-          scrollTop > bannerSectionTop - windowHeight + 100 &&
-          scrollTop < bannerSectionTop + bannerSection.offsetHeight
-        ) {
-          container.style.opacity = "1";
-          container.style.transform = "translateY(0)";
-        } else {
-          container.style.opacity = "0";
-          container.style.transform = "translateY(20px)";
-        }
-      }
-
-      window.addEventListener("scroll", animateContainer);
-      animateContainer();
-    });
-    </script>
+    
     
     
         
