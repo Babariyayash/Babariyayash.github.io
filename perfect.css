@@ -377,12 +377,14 @@
   .hero-title {
     max-width: 20ch;
     margin-bottom: 15px;
+    font-size: 55px;
   }
   
   .hero-text {
     color: var(--independence);
     line-height: 1.8;
     margin-bottom: 30px;
+    font-size: 25px;
   }
   
   .hero-banner { display: none; }
@@ -731,6 +733,11 @@
     --color: var(--red-salsa);
   }
   
+  .coming-soon-label {
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
   
   
   

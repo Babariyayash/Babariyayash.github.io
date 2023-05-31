@@ -18,9 +18,9 @@ function createCarCards(containerId) {
       },
       {
         image: './assets/images/tesla.JPG',
-        alt: 'Tesla Model 3 2022',
+        alt: 'Tesla Model 3 2023',
         title: 'Tesla Model 3',
-        year: 2022,
+        year: 2023,
         capacity: '5 People',
         type: 'Electric',
         fuel: '',
@@ -30,9 +30,9 @@ function createCarCards(containerId) {
       },
       {
         image: './assets/images/rvr.jpeg',
-        alt: 'Mitsubishi RVR 2022',
+        alt: 'Mitsubishi RVR 2023',
         title: 'Mitsubishi RVR',
-        year: 2022,
+        year: 2023,
         capacity: '5 People',
         type: 'Gasoline',
         fuel: '7.5 L / 100km',
@@ -78,15 +78,51 @@ function createCarCards(containerId) {
       },  
       {
         image: './assets/images/beetle.jpeg',
-        alt: 'Volkswagen Beetle 2014',
+        alt: 'Volkswagen Beetle 2015',
         title: 'Volkswagen Beetle',
-        year: 2014,
+        year: 2015,
         capacity: '4 People',
         type: 'Gasoline',
         fuel: '6.6 L / 100km',
         transmission: 'Automatic',
         price: '$440',
         link : 'https://turo.com/ca/en/car-rental/canada/edmonton-ab/volkswagen/beetle/2001413?endDate=06%2F02%2F2023&endTime=10%3A00&startDate=05%2F30%2F2023&startTime=10%3A00'
+        },
+        {
+        image: './assets/images/ford.png',
+        alt: 'Volkswagen Beetle 2015',
+        title: 'Fort Transit-350 Wagon 2019',
+        year: 2019,
+        capacity: '12 People',
+        type: 'Gasoline',
+        fuel: '12.5 L / 100km',
+        transmission: 'Automatic',
+        price: '$440',
+        link : 'https://turo.com/ca/en/van-rental/canada/beaumont-ab/ford/transit-350-wagon/1670351'
+        },
+        {
+        image: './assets/images/forte.jpeg',
+        alt: 'Volkswagen Beetle 2015',
+        title: 'Kia Forte',
+        year: 2016,
+        capacity: '5 People',
+        type: 'Gasoline',
+        fuel: '7.0 L / 100km',
+        transmission: 'Automatic',
+        price: '$440',
+        link : ''
+        },
+        {
+        image: './assets/images/rvr2.jpeg',
+        alt: 'Volkswagen Beetle 2015',
+        title: 'Mitsubishi RVR',
+        year: 2023,
+        capacity: '5 People',
+        type: 'Gasoline',
+        fuel: '7.5 L / 100km',
+        transmission: 'Automatic',
+        price: '$440',
+        link : ''
         },
       
 
@@ -177,16 +213,35 @@ function createCarCards(containerId) {
 
     // favButton.appendChild(favIcon);
 
-    const rentButton = document.createElement('button');
-    rentButton.className = 'btn';
-    rentButton.textContent = 'Rent now';
-    rentButton.addEventListener('click', () => {
-        window.location.href = car.link; // Navigate to the specific link for each car
-      });
+    if (car.link) {
+        const rentButton = document.createElement('button');
+        rentButton.className = 'btn';
+        rentButton.textContent = 'Rent now';
+        rentButton.addEventListener('click', () => {
+          window.location.href = car.link; // Navigate to the specific link for each car
+        });
+    
+        cardPriceWrapper.appendChild(rentButton);
+      } else {
+        const comingSoonLabel = document.createElement('p');
+        comingSoonLabel.className = 'coming-soon-label';
+        comingSoonLabel.textContent = 'Coming Soon';
+    
+        cardPriceWrapper.appendChild(comingSoonLabel);
+      }
+    
+
+    // const rentButton = document.createElement('button');
+    // rentButton.className = 'btn';
+    // rentButton.textContent = 'Rent now';
+    // rentButton.addEventListener('click', () => {
+    //     window.location.href = car.link; // Navigate to the specific link for each car
+    //   });
 
     // cardPriceWrapper.appendChild(cardPrice);
     // cardPriceWrapper.appendChild(favButton);
-    cardPriceWrapper.appendChild(rentButton);
+
+    // cardPriceWrapper.appendChild(rentButton);
 
     cardContent.appendChild(cardPriceWrapper);
     carCard.appendChild(cardContent);
