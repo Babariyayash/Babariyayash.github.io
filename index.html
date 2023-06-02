@@ -8,6 +8,11 @@
   <title>Perfect Rentals - Rent your favourite car</title>
 
 
+   <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/svg+xml">
+
 
   <!-- 
     - custom css link
@@ -53,7 +58,7 @@
               </li>
     
               <li>
-                <a href="#" class="navbar-link" data-nav-link>About us</a>
+                <a href="#about-us" class="navbar-link" data-nav-link>About us</a>
               </li>
     
               <!-- <li>
@@ -300,6 +305,62 @@
           </div>
         </div>
       </section>
+
+      <!-- <div class="team-section">
+        <h2>Meet Our Team</h2>
+        <div class="team-members">
+          <div class="team-member">
+            <img src="assets/images/krish.png" alt="Team Member 1">
+            <div class="member-details">
+              <h4>Krish Patel</h4>
+              <p>CFO</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="assets/images/jjr3.png" alt="Team Member 2">
+            <div class="member-details">
+              <h4>Jay Patel</h4>
+              <p>COO</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="assets/images/kaushik.png" alt="Team Member 2">
+            <div class="member-details">
+              <h4>Kaushik Thakur</h4>
+              <p>CEO</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="assets/images/jsr.png" alt="Team Member 2">
+            <div class="member-details">
+              <h4>Jay Patel</h4>
+              <p>CEO</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="assets/images/caravan.JPG" alt="Team Member 2">
+            <div class="member-details">
+              <h4>Jane Smith</h4>
+              <p>Role in Company</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="assets/images/caravan.JPG" alt="Team Member 2">
+            <div class="member-details">
+              <h4>Jane Smith</h4>
+              <p>Role in Company</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <img src="assets/images/caravan.JPG" alt="Team Member 2">
+            <div class="member-details">
+              <h4>Jane Smith</h4>
+              <p>Role in Company</p>
+            </div>
+          </div>
+          <!-- Add more team members here -->
+        </div>
+      </div> -->
       
       
 
@@ -315,7 +376,7 @@
                         PERFECT RENTALS
                     </a>
                     <p class="footer-text">
-                        Search for cheap rental cars in Edmonton. With a diverse fleet of 9 vehicles.
+                        Search for cheap rental cars in Edmonton. With a diverse fleet of 11 vehicles.
                     </p>
                 </div>
                 <ul class="footer-list">
@@ -384,7 +445,19 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
-    
+    <script>
+        const heroBanner = document.querySelector('.hero-banner');
+        const heroImage = new Image();
+        heroImage.src = "assets/images/IMG_1944.JPG";
+        heroImage.addEventListener('load', () => {
+        heroBanner.classList.add('loaded');
+        });
+
+        // Add loaded class immediately if the image is already cached
+        if (heroImage.complete && heroImage.naturalHeight !== 0) {
+        heroBanner.classList.add('loaded');
+        }
+    </script>
     
         
 </body>

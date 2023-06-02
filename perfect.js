@@ -90,8 +90,8 @@ function createCarCards(containerId) {
         },
         {
         image: './assets/images/ford.png',
-        alt: 'Volkswagen Beetle 2015',
-        title: 'Fort Transit-350 Wagon 2019',
+        alt: 'Ford Transit-350 Wagon 2019',
+        title: 'Ford Transit-350 Wagon',
         year: 2019,
         capacity: '12 People',
         type: 'Gasoline',
@@ -102,7 +102,7 @@ function createCarCards(containerId) {
         },
         {
         image: './assets/images/forte.jpeg',
-        alt: 'Volkswagen Beetle 2015',
+        alt: 'Kia Forte 2016',
         title: 'Kia Forte',
         year: 2016,
         capacity: '5 People',
@@ -110,11 +110,11 @@ function createCarCards(containerId) {
         fuel: '7.0 L / 100km',
         transmission: 'Automatic',
         price: '$440',
-        link : ''
+        link : 'https://turo.com/ca/en/car-rental/canada/edmonton-ab/kia/forte/2056368'
         },
         {
         image: './assets/images/rvr2.jpeg',
-        alt: 'Volkswagen Beetle 2015',
+        alt: 'Mitsubishi RVR 2023',
         title: 'Mitsubishi RVR',
         year: 2023,
         capacity: '5 People',
@@ -124,6 +124,18 @@ function createCarCards(containerId) {
         price: '$440',
         link : ''
         },
+        {
+        image: './assets/images/dart.jpg',
+        alt: 'Dodge Dart',
+        title: 'Dodge Dart',
+        year: 2015,
+        capacity: '5 People',
+        type: 'Gasoline',
+        fuel: '7.0 L / 100km',
+        transmission: 'Automatic',
+        price: '$440',
+        link : ''
+            },
       
 
       // Add more car objects here if needed
@@ -146,6 +158,10 @@ function createCarCards(containerId) {
   
       cardBanner.appendChild(carImage);
       carCard.appendChild(cardBanner);
+
+      carImage.addEventListener('click', () => {
+        window.location.href = car.link;
+      });
   
       const cardContent = document.createElement('div');
       cardContent.className = 'card-content';
@@ -156,9 +172,14 @@ function createCarCards(containerId) {
       const cardTitle = document.createElement('h3');
       cardTitle.className = 'h3 card-title';
       const carLink = document.createElement('a');
-      carLink.href = '#';
+      carLink.href = car.link;
       carLink.textContent = car.title;
       cardTitle.appendChild(carLink);
+
+      carLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.location.href = car.link;
+      });
   
       const carYear = document.createElement('data');
       carYear.className = 'year';
