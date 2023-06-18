@@ -122,20 +122,69 @@ function createCarCards(containerId) {
         fuel: '7.5 L / 100km',
         transmission: 'Automatic',
         price: '$440',
-        link : ''
+        link : 'https://turo.com/ca/en/suv-rental/canada/calgary-ab/mitsubishi/rvr/2075671?endDate=06%2F18%2F2023&endTime=10%3A00&startDate=06%2F15%2F2023&startTime=10%3A00'
+        },
+        // {
+        // image: './assets/images/dart.jpg',
+        // alt: 'Dodge Dart',
+        // title: 'Dodge Dart',
+        // year: 2015,
+        // capacity: '5 People',
+        // type: 'Gasoline',
+        // fuel: '7.0 L / 100km',
+        // transmission: 'Automatic',
+        // price: '$440',
+        // link : ''
+        // },
+        {
+          image: './assets/images/focus.jpg',
+          alt: 'Ford Focus 2015',
+          title: 'Ford Focus',
+          year: 2015,
+          capacity: '5 People',
+          type: 'Gasoline',
+          fuel: '7.0 L / 100km',
+          transmission: 'Automatic',
+          price: '$440',
+          link : 'https://turo.com/ca/en/car-rental/canada/edmonton-ab/ford/focus/2068150?endDate=06%2F18%2F2023&endTime=10%3A00&startDate=06%2F15%2F2023&startTime=10%3A00'
         },
         {
-        image: './assets/images/dart.jpg',
-        alt: 'Dodge Dart',
-        title: 'Dodge Dart',
-        year: 2015,
-        capacity: '5 People',
-        type: 'Gasoline',
-        fuel: '7.0 L / 100km',
-        transmission: 'Automatic',
-        price: '$440',
-        link : ''
-            },
+          image: './assets/images/escape.jpg',
+          alt: 'Ford Escape',
+          title: 'Ford Escape',
+          year: 2014,
+          capacity: '5 People',
+          type: 'Gasoline',
+          fuel: '7.0 L / 100km',
+          transmission: 'Automatic',
+          price: '$440',
+          link : 'https://turo.com/ca/en/suv-rental/canada/calgary-ab/ford/escape/2068850?endDate=06%2F18%2F2023&endTime=10%3A00&startDate=06%2F15%2F2023&startTime=10%3A00'
+        },
+        {
+          image: './assets/images/whiteven.jpg',
+          alt: 'Hyundai Veneue 2023',
+          title: 'Hyundai Venue White',
+          year: 2023,
+          capacity: '5 People',
+          type: 'Gasoline',
+          fuel: '7.0 L / 100km',
+          transmission: 'Automatic',
+          price: '$440',
+          link : 'https://turo.com/ca/en/suv-rental/canada/calgary-ab/hyundai/venue/2075065?endDate=06%2F18%2F2023&endTime=10%3A00&startDate=06%2F15%2F2023&startTime=10%3A00'
+        },
+        {
+          image: './assets/images/venuesilver.jpg',
+          alt: 'Hyundai Veneue 2023',
+          title: 'Hyundai Venue Silver',
+          year: 2023,
+          capacity: '5 People',
+          type: 'Gasoline',
+          fuel: '7.0 L / 100km',
+          transmission: 'Automatic',
+          price: '$440',
+          link : 'https://turo.com/ca/en/suv-rental/canada/calgary-ab/hyundai/venue/2075360?endDate=06%2F18%2F2023&endTime=10%3A00&startDate=06%2F15%2F2023&startTime=10%3A00'
+          },
+        
       
 
       // Add more car objects here if needed
