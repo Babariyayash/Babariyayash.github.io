@@ -185,10 +185,8 @@ function createCarCards(containerId) {
           link : 'https://turo.com/ca/en/suv-rental/canada/calgary-ab/hyundai/venue/2075360?endDate=06%2F18%2F2023&endTime=10%3A00&startDate=06%2F15%2F2023&startTime=10%3A00'
           },
         
-      
-
-      // Add more car objects here if needed
     ];
+    // Add more car objects here if needed
   
     cars.forEach(car => {
       const carCard = document.createElement('li');

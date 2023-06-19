@@ -1158,7 +1158,7 @@
     } */
     .hero-banner {
       display: block;
-      background: url("assets/images/pra.jpeg") no-repeat;
+      background: url("../images/pra.jpeg") no-repeat;
       background-size: cover;
       background-position: center;
       position: absolute;
@@ -1191,7 +1191,7 @@
   /* @media (min-width: 370px) {
     .hero-banner {
       display: block;
-      background: url("assets/images/pra.jpeg") no-repeat;
+      background: url("../images/pra.jpeg") no-repeat;
       background-size: cover;
       background-position: center;
       position: absolute;
@@ -1353,7 +1353,7 @@
   
     .hero-banner {
       display: block;
-      background: url("assets/images/IMG_1944.JPG") no-repeat;
+      background: url("../images/IMG_1944.JPG") no-repeat;
       background-size: cover;
       background-position: left;
       position: absolute;
