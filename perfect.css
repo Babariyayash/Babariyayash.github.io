@@ -247,6 +247,9 @@
   \*-----------------------------------*/
 
   
+  .transparent{
+    color: white;
+  }
   .bold {
     font-weight: bold;
     font-family: 'Ubuntu', sans-serif;    
@@ -590,6 +593,7 @@
     align-items: center;
     gap: 10px 15px;
     margin-bottom: 30px;
+    margin-top: 45px;
   }
   
   .featured-car-link {
@@ -1184,7 +1188,7 @@
     
   }
   
-  @media (min-width: 370px) {
+  /* @media (min-width: 370px) {
     .hero-banner {
       display: block;
       background: url("assets/images/pra.jpeg") no-repeat;
@@ -1199,9 +1203,11 @@
       z-index: -3;
       opacity: 0;
       transition: opacity 0.5s;
-      /* animation: fadeIn 1.5s ease-in-out forwards; */
     }
-  }
+  } */
+
+  
+
   
   
   
