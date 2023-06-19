@@ -1107,6 +1107,16 @@
     .about-us .container {
       max-width: 420px;
     }
+
+    .featured-car .title-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px 15px;
+      margin-bottom: 30px;
+      margin-top: 45px;
+    }
    }
   
   @media (min-width: 350px) {
@@ -1156,9 +1166,10 @@
     border-radius: 30px;
     z-index: -1;
     } */
+
     .hero-banner {
       display: block;
-      background: url("../images/pra.jpeg") no-repeat;
+      background: url("assets/images/pra.jpeg") no-repeat;
       background-size: cover;
       background-position: center;
       position: absolute;
@@ -1171,6 +1182,16 @@
       opacity: 0;
       transition: opacity 0.5s;
       /* animation: fadeIn 1.5s ease-in-out forwards; */
+    }
+
+    .featured-car .title-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px 15px;
+      margin-bottom: 30px;
+      margin-top: 95px;
     }
     
     @keyframes fadeIn {
@@ -1191,7 +1212,7 @@
   /* @media (min-width: 370px) {
     .hero-banner {
       display: block;
-      background: url("../images/pra.jpeg") no-repeat;
+      background: url("assets/images/pra.jpeg") no-repeat;
       background-size: cover;
       background-position: center;
       position: absolute;
@@ -1353,7 +1374,7 @@
   
     .hero-banner {
       display: block;
-      background: url("../images/IMG_1944.JPG") no-repeat;
+      background: url("assets/images/IMG_1944.JPG") no-repeat;
       background-size: cover;
       background-position: left;
       position: absolute;
@@ -1363,6 +1384,16 @@
       width: 900px;
       border-radius: 20px;
       z-index: -3;
+    }
+
+    .featured-car .title-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px 15px;
+      margin-bottom: 30px;
+      margin-top: 45px;
     }
 
     
@@ -1429,6 +1460,16 @@
     .right-info {
       width: 100%;
     }
+
+    .featured-car .title-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px 15px;
+      margin-bottom: 30px;
+      margin-top: 45px;
+    }
    
   }
 
@@ -1442,6 +1483,16 @@
     .right-info {
       width: 100%;
     }
+
+    .featured-car .title-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px 15px;
+      margin-bottom: 30px;
+      margin-top: 45px;
+    }
   }
   @media (max-width: 1190px) {
     .center-wrapper {
@@ -1452,6 +1503,16 @@
     .left-info,
     .right-info {
       width: 100%;
+    }
+
+    .featured-car .title-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px 15px;
+      margin-bottom: 30px;
+      margin-top: 85px;
     }
   }
   
@@ -1549,6 +1610,15 @@
     .about-us .container {
       max-width: 1350px;
     }
+    .featured-car .title-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px 15px;
+      margin-bottom: 30px;
+      margin-top: 45px;
+    }
   
   
   
@@ -1604,7 +1674,16 @@
       margin: 20px;
       text-transform: uppercase;
     }
-  
+
+    .featured-car .title-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px 15px;
+      margin-bottom: 30px;
+      margin-top: 45px;
+    }
   
   
     /**
