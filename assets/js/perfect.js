@@ -74,7 +74,7 @@ function createCarCards(containerId) {
         fuel: '6.0 L / 100km',
         transmission: 'Automatic',
         price: '$350',
-        link : 'https://turo.com/ca/en/car-rental/canada/edmonton-ab/kia/rio/1898970?endDate=06%2F02%2F2023&endTime=10%3A00&startDate=05%2F30%2F2023&startTime=10%3A00'
+        link : ''
       },  
       {
         image: './assets/images/beetle.jpeg',
@@ -86,7 +86,7 @@ function createCarCards(containerId) {
         fuel: '6.6 L / 100km',
         transmission: 'Automatic',
         price: '$440',
-        link : 'https://turo.com/ca/en/car-rental/canada/edmonton-ab/volkswagen/beetle/2001413?endDate=06%2F02%2F2023&endTime=10%3A00&startDate=05%2F30%2F2023&startTime=10%3A00'
+        link : ''
         },
         {
         image: './assets/images/ford.png',
@@ -124,18 +124,6 @@ function createCarCards(containerId) {
         price: '$440',
         link : 'https://turo.com/ca/en/suv-rental/canada/calgary-ab/mitsubishi/rvr/2075671?endDate=06%2F18%2F2023&endTime=10%3A00&startDate=06%2F15%2F2023&startTime=10%3A00'
         },
-        // {
-        // image: './assets/images/dart.jpg',
-        // alt: 'Dodge Dart',
-        // title: 'Dodge Dart',
-        // year: 2015,
-        // capacity: '5 People',
-        // type: 'Gasoline',
-        // fuel: '7.0 L / 100km',
-        // transmission: 'Automatic',
-        // price: '$440',
-        // link : ''
-        // },
         {
           image: './assets/images/focus.jpg',
           alt: 'Ford Focus 2015',
@@ -158,7 +146,7 @@ function createCarCards(containerId) {
           fuel: '7.0 L / 100km',
           transmission: 'Automatic',
           price: '$440',
-          link : 'https://turo.com/ca/en/suv-rental/canada/calgary-ab/ford/escape/2068850?endDate=06%2F18%2F2023&endTime=10%3A00&startDate=06%2F15%2F2023&startTime=10%3A00'
+          link : ''
         },
         {
           image: './assets/images/whiteven.jpg',
@@ -184,6 +172,67 @@ function createCarCards(containerId) {
           price: '$440',
           link : 'https://turo.com/ca/en/suv-rental/canada/calgary-ab/hyundai/venue/2075360?endDate=06%2F18%2F2023&endTime=10%3A00&startDate=06%2F15%2F2023&startTime=10%3A00'
           },
+          {
+            image: './assets/images/blackkia.jpg',
+            alt: 'Black Kia Carnival 2022',
+            title: 'Black Kia Carnival 2022',
+            year: 2022,
+            capacity: '8 People',
+            type: 'Gasoline',
+            fuel: '8.0 L / 100km',
+            transmission: 'Automatic',
+            price: '$440',
+            link : 'https://turo.com/ca/en/car-rental/canada/calgary-ab/kia/carnival/2081917?endDate=12%2F26%2F2023&endTime=10%3A00&startDate=12%2F23%2F2023&startTime=10%3A00'
+            },
+            {
+              image: './assets/images/porche.JPG',
+              alt: 'Porche Cayenne',
+              title: 'Porche Cayenne',
+              year: 2011,
+              capacity: '5 People',
+              type: 'Gasoline',
+              fuel: '7.0 L / 100km',
+              transmission: 'Automatic',
+              price: '$440',
+              link : ''
+              },
+              {
+                image: './assets/images/audiq7.JPG',
+                alt: 'Audi Q7',
+                title: 'Audi Q7',
+                year: 2023,
+                capacity: '5 People',
+                type: 'Gasoline',
+                fuel: '7.0 L / 100km',
+                transmission: 'Automatic',
+                price: '$440',
+                link : ''
+                },
+                {
+                  image: './assets/images/bmwx5.JPG',
+                  alt: 'BMW X5',
+                  title: 'BMW X5',
+                  year: 2016,
+                  capacity: '5 People',
+                  type: 'Gasoline',
+                  fuel: '7.0 L / 100km',
+                  transmission: 'Automatic',
+                  price: '$440',
+                  link : ''
+                  },
+                  {
+                    image: './assets/images/merc.JPG',
+                    alt: 'Mercedes',
+                    title: 'Mercedes GLA',
+                    year: 2015,
+                    capacity: '5 People',
+                    type: 'Gasoline',
+                    fuel: '7.0 L / 100km',
+                    transmission: 'Automatic',
+                    price: '$440',
+                    link : ''
+                    },
+
         
     ];
     // Add more car objects here if needed
@@ -293,7 +342,7 @@ function createCarCards(containerId) {
       } else {
         const comingSoonLabel = document.createElement('p');
         comingSoonLabel.className = 'coming-soon-label';
-        comingSoonLabel.textContent = 'Coming Soon';
+        comingSoonLabel.textContent = 'Currently Booked !!';
     
         cardPriceWrapper.appendChild(comingSoonLabel);
       }
