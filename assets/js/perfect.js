@@ -186,7 +186,7 @@ function createCarCards(containerId) {
       },
       {
         image: './assets/images/porche.JPG',
-        alt: 'Porche Cayenne',
+        alt: 'Porche Cayenne 2011',
         title: 'Porche Cayenne',
         year: 2011,
         capacity: '5 People',
@@ -198,9 +198,9 @@ function createCarCards(containerId) {
       },
       {
         image: './assets/images/audiq7.JPG',
-        alt: 'Audi Q7',
+        alt: 'Audi Q7 2015',
         title: 'Audi Q7',
-        year: 2023,
+        year: 2015,
         capacity: '5 People',
         type: 'Gasoline',
         fuel: '7.0 L / 100km',
@@ -210,7 +210,7 @@ function createCarCards(containerId) {
       },
       {
         image: './assets/images/bmwx5.JPG',
-        alt: 'BMW X5',
+        alt: 'BMW X5 2016',
         title: 'BMW X5',
         year: 2016,
         capacity: '5 People',
@@ -222,7 +222,7 @@ function createCarCards(containerId) {
       },
       {
         image: './assets/images/merc.JPG',
-        alt: 'Mercedes',
+        alt: 'Mercedes GLA 2015',
         title: 'Mercedes GLA',
         year: 2015,
         capacity: '5 People',
